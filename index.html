@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge O Level Physics (5054) - Question Bank</title>
+  
+  <!-- Premium Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- MathJax Configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Top Header -->
+    <header class="app-header">
+      <div class="brand-title">
+        Cambridge 5054 Physics
+        <span class="chapter-tag">Chapter 2: Thermal Physics</span>
+      </div>
+      <div class="db-counter" id="totalDatabaseCount">
+        Loading...
+      </div>
+    </header>
+
+    <!-- Search & Filter Controls Dashboard -->
+    <section class="control-panel" aria-label="Search and Filter Controls">
+      <div class="search-input-wrapper">
+        <span class="search-icon">&#128269;</span>
+        <input 
+          type="search" 
+          id="searchInput" 
+          placeholder="Search by ID (e.g. Q001), Paper (5054/11), keyword, or topic..." 
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button type="button" id="clearSearchBtn" class="clear-search-btn" title="Clear search" hidden>&times;</button>
+      </div>
+
+      <div class="filters-row">
+        <!-- Paper Type Pills -->
+        <div class="pill-group" id="paperTypePills" role="radiogroup">
+          <button type="button" class="pill active" data-type="all">All</button>
+          <button type="button" class="pill" data-type="mcq">MCQ (P1)</button>
+          <button type="button" class="pill" data-type="theory">Theory (P2)</button>
+          <button type="button" class="pill" data-type="practical">Practical (P3)</button>
+          <button type="button" class="pill" data-type="atp">ATP (P4)</button>
+        </div>
+
+        <!-- Dropdowns -->
+        <div class="dropdown-group">
+          <select id="topicFilter">
+            <option value="all">All Topics</option>
+            <option value="2.1">2.1 Kinetic Particle Model</option>
+            <option value="2.2">2.2 Thermal Properties &amp; Temp</option>
+            <option value="2.3">2.3 Transfer of Thermal Energy</option>
+          </select>
+
+          <select id="subtopicFilter">
+            <option value="all">All Subtopics</option>
+          </select>
+        </div>
+
+        <div class="counter-badge" id="resultsCount">
+          Showing <strong>0</strong> of 0
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Question Display Card Container -->
+    <main class="question-display-area" id="questionCardContainer">
+      <!-- Populated dynamically -->
+    </main>
+
+    <!-- Sticky Bottom Navigation Bar -->
+    <footer class="app-nav-bar">
+      <div class="nav-controls">
+        <button type="button" class="nav-action-btn" id="prevBtn" title="Previous Question">&larr; Previous</button>
+        
+        <div class="jump-control">
+          <span>Question</span>
+          <input type="number" id="jumpInput" min="0" value="1" />
+          <span id="jumpTotal">of 0</span>
+        </div>
+
+        <button type="button" class="nav-action-btn" id="nextBtn" title="Next Question">Next &rarr;</button>
+
+        <button type="button" class="nav-secondary-btn" id="randomBtn" title="Pick Random">&#127922; Random</button>
+      </div>
+    </footer>
+  </div>
+
+  <!-- LOAD ALL 26 BATCHES -->
+  <script src="questions-batch1.js"></script>
+  <script src="questions-batch2.js"></script>
+  <script src="questions-batch3.js"></script>
+  <script src="questions-batch4.js"></script>
+  <script src="questions-batch5.js"></script>
+  <script src="questions-batch6.js"></script>
+  <script src="questions-batch7.js"></script>
+  <script src="questions-batch8.js"></script>
+  <script src="questions-batch9.js"></script>
+  <script src="questions-batch10.js"></script>
+  <script src="questions-batch11.js"></script>
+  <script src="questions-batch12.js"></script>
+  <script src="questions-batch13.js"></script>
+  <script src="questions-batch14.js"></script>
+  <script src="questions-batch15.js"></script>
+  <script src="questions-batch16.js"></script>
+  <script src="questions-batch17.js"></script>
+  <script src="questions-batch18.js"></script>
+  <script src="questions-batch19.js"></script>
+  <script src="questions-batch20.js"></script>
+  <script src="questions-batch21.js"></script>
+  <script src="questions-batch22.js"></script>
+  <script src="questions-batch23.js"></script>
+  <script src="questions-batch24.js"></script>
+  <script src="questions-batch25.js"></script>
+  <script src="questions-batch26.js"></script>
+
+  <script src="simulations.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
